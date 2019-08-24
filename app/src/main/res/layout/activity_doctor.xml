@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/doctor_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_doctor"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/doctor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:text="Гиппократ"/>
+
+            <TextView
+                android:id="@+id/doctor_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="16sp"
+                android:text="Хирург"/>
+
+            <TextView
+                android:id="@+id/doctor_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="16sp"
+                android:text="Опыт: 10лет"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/doctor_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@android:color/black"
+        android:text="Стоимость: 7000тг"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@android:color/black"
+        android:text="Выберите услугу:"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@android:color/black"
+        android:text="Выберите дату:"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/week_recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@android:color/black"
+        android:text="Выберите время:"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/hour_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_record_red"
+        android:layout_gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textSize="16sp"
+        android:text="Записаться"/>
+</LinearLayout>
